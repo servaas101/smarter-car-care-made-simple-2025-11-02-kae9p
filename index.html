@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smarter Car Care Made Simple - Drive smarter, safer, stress-free with AutoMind's intelligent vehicle diagnostics and insights">
+    <meta name="keywords" content="car diagnostics, vehicle insights, car maintenance, smart alerts">
+    <meta name="author" content="AutoMind">
+    <title>AutoMind - Smarter Car Care Made Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(102, 126, 234, 0.05);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 smooth-scroll">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-car text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">AutoMind</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="/get-started" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 md:hidden">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium py-2">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium py-2">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium py-2">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium py-2">FAQ</a>
+                    <a href="/get-started" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-24 md:py-32 lg:py-40 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
+                        Smarter Car Care Made Simple
+                    </h1>
+                    <p class="text-xl md:text-2xl text-purple-100 mb-8 leading-relaxed font-light">
+                        Drive smarter, safer, stress-free
+                    </p>
+                    <p class="text-lg text-purple-100 mb-8 leading-relaxed">
+                        Experience the future of vehicle maintenance with AutoMind's intelligent diagnostics system. Get real-time insights about your car's health, receive proactive alerts before issues become expensive repairs, and make informed decisions about your vehicle's care.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/get-started" class="btn-primary px-8 py-4 bg-white text-purple-600 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300 text-center">
+                            Start Free Trial
+                        </a>
+                        <button class="px-8 py-4 border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300">
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden lg:flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-white opacity-10 rounded-3xl blur-3xl"></div>
+                        <div class="relative bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 border border-white border-opacity-20">
+                            <i class="fas fa-mobile-alt text-8xl text-white opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Powerful Features Built for You
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Discover the intelligent capabilities that make AutoMind the leading choice for modern vehicle owners
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Smart Diagnostics Card -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Smart Diagnostics</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our advanced AI-powered diagnostic system continuously monitors your vehicle's performance metrics in real-time. It analyzes data from multiple sensors to identify potential issues before they become costly problems, giving you complete peace of mind on every journey.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Real-time system monitoring</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Predictive failure detection</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Multi-sensor analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Live Alerts Card -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bell text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Live Alerts</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Receive instant notifications the moment our system detects any anomalies or maintenance needs. Our intelligent alert system prioritizes issues by severity, ensuring you're always informed about what matters most for your vehicle's health and safety.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Instant notifications</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Priority-based alerts</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Multi-channel delivery</li>
+                    </ul>
+                </div>
+
+                <!-- Auto Insights Card -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Auto Insights</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Get comprehensive analytics and actionable recommendations tailored to your vehicle's specific needs. Our insights platform provides detailed reports on fuel efficiency, maintenance schedules, driving patterns, and optimization opportunities to help you maximize your vehicle's lifespan.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Detailed analytics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Personalized recommendations</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i> Performance optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Why Choose AutoMind?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Transform how you care for your vehicle and enjoy tangible benefits that matter
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Save Money Benefit -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-piggy-bank text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Save Money</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Prevent expensive repairs by addressing issues early. Our predictive maintenance system helps you avoid costly breakdowns and unnecessary service visits. On average, AutoMind users save up to 35% on annual maintenance costs through proactive care and informed decision-making.
+                    </p>
+                    <div class="bg-green-50 border-l-4 border-green-500 px-4 py-3 rounded">
+                        <p class="text-green-700 font-semibold">Average savings: $1,200/year</p>
+                    </div>
+                </div>
+
+                <!-- Prevent Issues Benefit -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Prevent Issues</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Stay ahead of potential problems with our advanced detection system. By identifying problems before they escalate, you'll enjoy increased reliability, fewer unexpected breakdowns, and extended vehicle lifespan. Our users report 40% fewer emergency repairs compared to traditional maintenance approaches.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 px-4 py-3 rounded">
+                        <p class="text-blue-700 font-semibold">40% fewer emergency repairs</p>
+                    </div>
+                </div>
+
+                <!-- Stay Informed Benefit -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-lightbulb text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Stay Informed</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Make confident decisions about your vehicle with complete transparency and detailed information. Our comprehensive dashboard gives you full visibility into your car's health, maintenance history, and future needs. Never be caught off-guard by unexpected vehicle issues again.
+                    </p>
+                    <div class="bg-orange-50 border-l-4 border-orange-500 px-4 py-3 rounded">
+                        <p class="text-orange-700 font-semibold">100% transparency guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background -->
+    <section class="py-24 bg-cover bg-center relative" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=1200&h=400&fit=crop');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your Car Care?
+            </h2>
+            <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Join thousands of satisfied vehicle owners who are already experiencing smarter, safer, and more stress-free driving with AutoMind's intelligent diagnostics system.
+            </p>
+            <a href="/get-started" class="btn-primary inline-block px-10 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300">
+                Start Your Free Trial Today
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+                About AutoMind
+            </h2>
+            
+            <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <p>
+                    AutoMind was founded in 2020 by a team of automotive engineers, software developers, and data scientists who shared a common vision: to revolutionize how vehicle owners care for their cars. Frustrated by the lack of transparency and accessibility in vehicle diagnostics, our founders set out to create an intelligent system that would empower every car owner with professional-grade insights. What began as a passion project in a small garage has grown into a comprehensive platform serving over 100,000 vehicles across multiple continents, delivering real-time diagnostics and actionable maintenance recommendations to drivers of all experience levels.
+                </p>
+                <p>
+                    At AutoMind, we're committed to making vehicle ownership smarter, safer, and more affordable for everyone. Our core mission is to democratize access to advanced automotive technology and put vehicle owners in control of their maintenance decisions. We believe that every driver deserves transparency, reliability, and peace of mind on the road. By combining cutting-edge artificial intelligence with deep automotive expertise, we're building the future of predictive vehicle care—one that prevents problems before they happen, saves money through proactive maintenance, and helps drivers make informed decisions about their most valuable assets.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    What Our Users Say
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Real stories from real drivers who've transformed their vehicle maintenance experience
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "AutoMind saved me from a major engine failure. The system alerted me about a small coolant leak three weeks before it would have caused catastrophic damage. The repair cost me $200 instead of the $3,500 the mechanic said it would have been. I'm absolutely amazed by how accurate the diagnostics are. This app has paid for itself many times over."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            JM
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">James Mitchell</p>
+                            <p class="text-gray-600 text-sm">Fleet Manager, Logistics Plus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "As someone who doesn't know much about cars, AutoMind gives me confidence. The live alerts keep me informed about maintenance needs, and the insights help me understand what's actually happening with my vehicle. No more surprises at the mechanic! The interface is so user-friendly and the recommendations are always spot-on."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            SR
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sarah Rodriguez</p>
+                            <p class="text-gray-600 text-sm">Marketing Executive, Tech Solutions Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "I manage a fleet of 25 vehicles and AutoMind has been a game-changer. The ability to monitor all vehicles from one dashboard and get predictive maintenance alerts has reduced our downtime by 60%. Our maintenance costs have dropped significantly, and our drivers report feeling much safer knowing their vehicles are being actively monitored. Best investment we've made for our fleet."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            DK
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">David Kumar</p>
+                            <p class="text-gray-600 text-sm">Operations Director, Delivery Services Ltd</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The fuel efficiency insights from AutoMind have helped me optimize my driving habits and reduce fuel consumption by 18%. Combined with the predictive maintenance alerts that have kept my car running smoothly, I'm saving money every single month. The customer support team is also incredibly responsive and helpful."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            EP
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Emma Patterson</p>
+                            <p class="text-gray-600 text-sm">Sales Representative, Auto Parts Distribution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about AutoMind
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="faq-question px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-gray-900 flex-1">
+                            How does AutoMind connect to my vehicle?
+                        </h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-5 border-t border-gray-200 transition-all duration-300">
+                        <p class="text-gray-700 leading-relaxed">
+                            AutoMind connects to your vehicle through a small, discreet device that plugs into your car's OBD-II port (a standard diagnostic port found in all vehicles manufactured after 1996). This device communicates wirelessly with our secure cloud platform via Bluetooth and cellular networks. The connection is completely secure and uses military-grade encryption. Installation takes just 60 seconds—no professional installation required. Once connected, AutoMind continuously monitors your vehicle's systems and sends real-time data to your smartphone and dashboard for instant access to diagnostics and insights.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="faq-question px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-gray-900 flex-1">
+                            Is my vehicle data secure and private?
+                        </h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-5 border-t border-gray-200 transition-all duration-300">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely. Your privacy and data security are our top priorities. All data transmitted between your vehicle and our servers is encrypted using 256-bit SSL encryption, the same standard used by banks. We never sell your personal data or vehicle information to third parties. Your data is stored on secure, redundant servers with multiple layers of protection. We comply with all major data protection regulations including GDPR and CCPA. You have complete control over your data and can request deletion at any time. AutoMind undergoes regular security audits by independent third-party security firms to ensure the highest standards of protection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="faq-question px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-gray-900 flex-1">
+                            What vehicles are compatible with AutoMind?
+                        </h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-5 border-t border-gray-200 transition-all duration-300">
+                        <p class="text-gray-700 leading-relaxed">
+                            AutoMind is compatible with virtually all vehicles manufactured after 1996, including cars, trucks, SUVs, and vans. This covers over 99% of vehicles on the road today. Our system works with all major manufacturers including Toyota, Honda, Ford, Chevrolet, BMW, Mercedes-Benz, Tesla, and many more. The compatibility is determined by the vehicle's OBD-II port, which is a standard feature on all modern vehicles. If you're unsure whether your vehicle is compatible, you can check our compatibility tool on our website or contact our support team at support@automindza.co.za. We also offer a 30-day money-back guarantee if you find your vehicle isn't compatible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="faq-question px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-gray-900 flex-1">
+                            How accurate are the diagnostic alerts?
+                        </h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-5 border-t border-gray-200 transition-all duration-300">
+                        <p class="text-gray-700 leading-relaxed">
+                            AutoMind's diagnostic accuracy is exceptionally high, with an average accuracy rate of 94% for issue detection. Our AI engine has been trained on millions of vehicle data points and real-world maintenance records. The system uses advanced machine learning algorithms that continuously improve over time as they analyze more vehicles and outcomes. We validate all alerts against actual service records to ensure reliability. While no diagnostic system is 100% accurate, AutoMind's predictive capabilities have been proven to catch issues an average of 3-4 weeks before they become critical problems. Our users report that the vast majority of alerts correspond to real maintenance needs confirmed by professional mechanics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="faq-question px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-gray-900 flex-1">
+                            What's included in the pricing and are there hidden fees?
+                        </h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-5 border-t border-gray-200 transition-all duration-300">
+                        <p class="text-gray-700 leading-relaxed">
+                            We believe in complete transparency with no hidden fees. Our pricing includes the hardware device (the OBD-II connector), unlimited diagnostic monitoring, real-time alerts, detailed insights and analytics, and 24/7 customer support. You'll never be charged surprise fees or unexpected upgrades. We offer flexible subscription plans starting with a free trial so you can experience AutoMind risk-free. If you decide to continue, our plans are clearly priced with all features outlined upfront. You can cancel anytime without penalty. We also offer a 30-day money-back guarantee if you're not completely satisfied. Contact our support team at support@automindza.co.za for detailed pricing information and to find the plan that best suits your needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-purple-600 to-pink-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Don't Wait for Problems to Find You
+            </h2>
+            <p class="text-lg text-purple-100 mb-8 max-w-2xl mx-auto">
+                Start monitoring your vehicle today and experience the peace of mind that comes with proactive car care
+            </p>
+            <a href="/get-started" class="btn-primary inline-block px-10 py-4 bg-white text-purple-600 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300">
+                Get Started Free Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-car text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">AutoMind</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Smarter car care for modern drivers. Intelligent diagnostics, real-time alerts, and actionable insights.
+                    </p>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="/get-started" class="text-gray-400 hover:text-white transition-colors duration-300">Get Started</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="border-t border-gray-800 pt-12 mb-12">
+                <h4 class="text-white font-bold mb-4 text-lg">Get in Touch</h4>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div>
+                        <p class="text-gray-400 mb-2">Email Support</p>
+                        <a href="mailto:support@automindza.co.za" class="text-purple-400 hover:text-purple-300 transition-colors duration-300 font-semibold">support@automindza.co.za</a>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 mb-2">Follow Us</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-facebook-f text-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-twitter text-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-linkedin-in text-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2025 AutoMind. All rights reserved. Powered by intelligent vehicle diagnostics.
+                </p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms</a>
+                    <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
